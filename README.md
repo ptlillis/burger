@@ -21,3 +21,7 @@ Functionality is there, most of the issues pertain to styling. With more time, I
 
 repo: (https://github.com/ptlillis/burger)
 deployed: (https://floating-thicket-52759.herokuapp.com/)
+
+## Image
+
+<img width="942" alt="Screen Shot 2021-03-07 at 8 37 50 AM" src="https://user-images.githubusercontent.com/73671618/110241757-73001b80-7f20-11eb-84e0-d01f25dfe168.png">
