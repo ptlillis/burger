@@ -1,35 +1,37 @@
+//on click function ready for the event
 $(function () {
     $(".eat-me").on("click", function (event) {
       event.preventDefault();
         const id = $(this).data("id");
     
-        const newState = {
+        //new variable for the changing status of devoured to eaten
+        var changeStatus = {
           devoured: true
         };
     
-        // Send the PUT request.
+        // ajax put request to update burger from available to eaten
         $.ajax("/api/burger/" + id, {
           type: "PUT",
-          data: newState
+          data: changeStatus
         }).then(
           function () {
-            console.log("you have devoured, nice");
+            console.log("you have eaten, nice");
             // Reload the page to get the updated list
             location.reload();
           }
         );
       });
+    //listening for a new burger on submit click
     $(".burgerInput").on("submit", function(event) {
     event.preventDefault();
-    var newBurger = {
+    var burgerNew = {
         burger_name: $("#newBurger").val().trim()
     };
-    
+    //followed by ajax post request of a new burger to the table
     $.ajax("/api/burger", {
         type: "POST",
-        data: newBurger
+        data: burgerNew
     }).then(function() {
-        console.log("New Burger Created");
         location.reload();
     })
     })
