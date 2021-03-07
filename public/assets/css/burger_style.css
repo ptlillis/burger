@@ -1,15 +1,13 @@
-  /* h2 style */
-h2 {
-    text-align: center;
-    font-family: sans-serif;
+body {
+   font-family: sans-serif;
+   background-color: lime
 }
-/* flexbox-container style */
+
 .container {
     justify-content: center;
     align-items: center;
     align-content: center;
 }
-/* button style */
 button {
     padding: 10px;
     margin: 10px;
@@ -22,24 +20,18 @@ button {
     
     
 }
-
-
-/* body styel */
-body {
-   font-family: sans-serif;
-   background-color: lime
-}
-
-/* form style */
 form {
     text-align: center;
     border-color: black;
     border-radius: 10px;
     box-shadow: grey;
 }
-
-/* li style */
 li{
     font-size: 17px;
     color: black;
+}
+h2 {
+    text-align: center;
+    font-family: sans-serif;
+    text-size: 15px
 }
