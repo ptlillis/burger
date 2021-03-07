@@ -7,7 +7,7 @@
                 <h2>Select the burger you want to eat!</h2>
                 {{#each burger}}
                 {{#unless devoured}}
-                {{> burger/burger-block devoured=false}}
+                {{> burger/burgersdisplay devoured=false}}
                 {{/unless}}
                 {{/each}}
             </ul>
@@ -35,7 +35,7 @@
                 {{#each burger}}
                 {{#if devoured}}
                 {{!-- > means you're looking in the partials directory --}}
-                {{> burger/burger-block devoured=true}}
+                {{> burger/burgersdisplay devoured=true}}
                 {{/if}}
                 {{/each}}
             </ul>
