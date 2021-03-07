@@ -1,8 +1,11 @@
+//requiring connection from the same folder
 const connection = require('./connection');
 
+//defining orm and query strings
 const orm ={
+    //selecting all burgers from the table
     selectAll: (table, cb) =>{
-        // console.log(table);
+
         var queryString = "SELECT * FROM " + table + ";";
         connection.query(queryString, (err, result) => {
             if (err) {
@@ -11,10 +14,8 @@ const orm ={
             cb(result);
         });
     },
+    //adding new burger to the table
     insertOne: (table, column, value, cb) => {
-        // console.log("this is table: " + table);
-        // console.log("this is column" + column);
-        // console.log("this is value" + value);
         var queryString = "INSERT INTO ?? (??) VALUES (?)";
         connection.query(queryString, [table, column, value], (err, res) => {
             if(err) throw err;
@@ -22,6 +23,7 @@ const orm ={
             cb(res);
         });
     },
+    //update existing burger
     updateOne: (table, column, burgerId, cb) => {
         var queryString = "UPDATE ?? SET ?? = 1 WHERE id = ?";
         connection.query(queryString, [table, column, burgerId], (err, res) => {
