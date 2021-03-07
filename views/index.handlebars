@@ -1,0 +1,44 @@
+<h2>Welcome to Flavortown!</h2>
+<h2>It's Burger Time!</h2>
+<div class="container">
+
+        <div>            
+            <ul id="uneaten">
+                <h2>Select the burger you want to eat!</h2>
+                {{#each burger}}
+                {{#unless devoured}}
+                {{> burger/burger-block devoured=false}}
+                {{/unless}}
+                {{/each}}
+            </ul>
+
+        </div>
+
+        <div>
+            
+   
+            <h2>New Burger?</h2>
+        
+            <form class="burgerInput">
+            <input type="text" id="newBurger" name="burger_name">
+                <div class="container">
+                    
+                    <button type="submit" id="burgerBtn">Add this Burger</button>
+
+                </div>
+            </form>
+            
+        </div>
+        <div>
+            <ul id="eaten">
+                <h2>You're a beast! Here are the burgers you've eaten:</h2>
+                {{#each burger}}
+                {{#if devoured}}
+                {{!-- > means you're looking in the partials directory --}}
+                {{> burger/burger-block devoured=true}}
+                {{/if}}
+                {{/each}}
+            </ul>
+
+        </div>
+    </div>

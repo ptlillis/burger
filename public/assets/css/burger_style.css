@@ -1,0 +1,45 @@
+  /* h2 style */
+h2 {
+    text-align: center;
+    font-family: sans-serif;
+}
+/* flexbox-container style */
+.container {
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+/* button style */
+button {
+    padding: 10px;
+    margin: 10px;
+    color: white;
+    font-weight: bolder;
+    font-family: sans-serif;
+    background-color: black;
+    border-radius: 10px;
+    border-color: white;
+    
+    
+}
+
+
+/* body styel */
+body {
+   font-family: sans-serif;
+   background-color: lime
+}
+
+/* form style */
+form {
+    text-align: center;
+    border-color: black;
+    border-radius: 10px;
+    box-shadow: grey;
+}
+
+/* li style */
+li{
+    font-size: 17px;
+    color: black;
+}
