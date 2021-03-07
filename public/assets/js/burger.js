@@ -22,7 +22,7 @@ $(function () {
         );
       });
     //listening for a new burger on submit click
-    $(".burgerInput").on("submit", function(event) {
+    $(".inputBurger").on("submit", function(event) {
     event.preventDefault();
     var burgerNew = {
         burger_name: $("#newBurger").val().trim()
