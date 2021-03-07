@@ -24,5 +24,5 @@ const burger = {
   
 
 };
-
+//exporting model
 module.exports = burger;
